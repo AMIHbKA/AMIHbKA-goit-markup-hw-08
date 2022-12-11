@@ -73,38 +73,38 @@
   //desktop
   @media screen and (min-width: $content-width-desk) {
     padding-block: 200px;
-    background-image: image-set(
-      "../images/webp/desktop/desk-bg-img@1x.webp" type("image/webp"),
-      "../images/jpg/desktop/desk-bg-img@1x.jpg" type("image/jpeg")
-    );
-    // background-image: linear-gradient(
-    //     to right,
-    //     rgb(47 48 58 / 40%),
-    //     rgb(196 196 196 / 10%)
-    //   ),
-    //   url("../images/jpg/desktop/desk-bg-img@1x.jpg");
+    // background-image: image-set(
+    //   "../images/webp/desktop/desk-bg-img@1x.webp" type("image/webp"),
+    //   "../images/jpg/desktop/desk-bg-img@1x.jpg" type("image/jpeg")
+    // );
+    background-image: linear-gradient(
+        to right,
+        rgb(47 48 58 / 40%),
+        rgb(196 196 196 / 10%)
+      ),
+      url("../images/jpg/desktop/desk-bg-img@1x.jpg");
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2ddpx) {
-    //   background-image: linear-gradient(
-    //       to right,
-    //       rgb(47 48 58 / 40%),
-    //       rgb(196 196 196 / 10%)
-    //     ),
-    //     url("../images/jpg/desktop/desk-bg-img@2x.jpg");
-    // }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2ddpx) {
+      background-image: linear-gradient(
+          to right,
+          rgb(47 48 58 / 40%),
+          rgb(196 196 196 / 10%)
+        ),
+        url("../images/jpg/desktop/desk-bg-img@2x.jpg");
+    }
 
-    // @media (min-device-pixel-ratio: 3),
-    //   (min-resolution: 258dpi),
-    //   (min-resolution: 2ddpx) {
-    //   background-image: linear-gradient(
-    //       to right,
-    //       rgb(47 48 58 / 40%),
-    //       rgb(196 196 196 / 10%)
-    //     ),
-    //     url("../images/jpg/desktop/desk-bg-img@3x.jpg");
-    // }
+    @media (min-device-pixel-ratio: 3),
+      (min-resolution: 258dpi),
+      (min-resolution: 2ddpx) {
+      background-image: linear-gradient(
+          to right,
+          rgb(47 48 58 / 40%),
+          rgb(196 196 196 / 10%)
+        ),
+        url("../images/jpg/desktop/desk-bg-img@3x.jpg");
+    }
   }
 }
 
