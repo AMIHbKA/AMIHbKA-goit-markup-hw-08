@@ -1,0 +1,28 @@
+.section-title {
+  margin-bottom: 30px;
+  color: $color-dark;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @include fonts(28px, 33px);
+
+  //desktop
+  @media screen and (min-width: $content-width-desk) {
+    margin-bottom: 50px;
+    @include fonts(36px, 42px, 0.03em);
+  }
+}
+
+.additional-title {
+  font-size: 14px;
+  font-weight: $font-weight-bold;
+  line-height: calc(16 / 14);
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.activities__caption {
+  @extend .additional-title;
+  text-align: center;
+}

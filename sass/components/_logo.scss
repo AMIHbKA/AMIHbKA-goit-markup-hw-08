@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  font-family: $font-additional;
+  @include fonts(24px, 28px, $font-weight-bold, 0.03em, $color-primary);
+
+  @media screen and (min-width: $content-width-desk) {
+    @include fonts(26px, 31px);
+  }
+}
+
+.logo__accent-text {
+  color: $color-dark;
+}
+
+.logo__accent-text_light {
+  color: $color-white;
+}

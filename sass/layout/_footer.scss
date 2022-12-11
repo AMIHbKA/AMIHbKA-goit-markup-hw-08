@@ -1,0 +1,71 @@
+.footer {
+  padding-block: 60px;
+  background-color: $color-background-dark;
+
+  .logo {
+    justify-content: center;
+  }
+
+  .social-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .additional-title {
+    @media screen and (max-width: calc($content-width-desk - 1px)) {
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .form-subscription__button {
+    @media screen and (max-width: calc($content-width-desk - 1px)) {
+      margin-top: 20px;
+      display: block;
+      margin-inline: auto;
+    }
+  }
+
+  .form_subscription__input {
+    @media screen and (max-width: calc($content-width-desk - 1px)) {
+      display: block;
+      margin-inline: auto;
+    }
+  }
+}
+
+.address-block__item {
+  @media screen and (max-width: calc($content-width-desk - 1px)) {
+    text-align: center;
+  }
+
+  &:first-child {
+    margin-top: 20px;
+  }
+}
+
+.footer__wrapper {
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+
+  @media screen and (min-width: $content-width-tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: $content-width-desk) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.additional-title__social-block,
+.additional-title__form-subscription {
+  @media screen and (min-width: $content-width-desk) {
+    margin-top: 20px;
+  }
+}

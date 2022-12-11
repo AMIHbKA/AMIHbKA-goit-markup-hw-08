@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+
+  @media screen and (max-width: calc($content-width-tab - 1px)) {
+    display: none;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  gap: 50px;
+}
+
+.navigation__item {
+  @include fonts(14px, 16px, $font-weight-medium, 0.02em);
+}
+
+.navigation__link {
+  display: block;
+  padding-block: 32px;
+  color: $color-dark;
+  transition: color 0.25s $timing-control;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}
+
+.navigation__link_current {
+  position: relative;
+  color: $color-primary;
+
+  &::after {
+    position: absolute;
+    bottom: -1px;
+    left: -3.75%;
+    display: block;
+    width: 107.5%;
+    height: 4px;
+    content: "";
+    background-color: $color-primary;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,34 @@
+//calculate the width of the flex component
+@mixin column-width($columns, $margin-size) {
+  width: calc((100% - (($columns - 1) * 30px)) / $columns);
+}
+
+@mixin fonts(
+  $size: false,
+  $lh: false,
+  $weight: false,
+  $ls: 0.03em,
+  $color: false
+) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: calc($lh / $size);
+  }
+
+  @if $color {
+    color: $color;
+  }
+}
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

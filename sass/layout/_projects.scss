@@ -1,0 +1,91 @@
+.buttons-list__card-set {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $content-width-tab) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $content-width-desk) {
+    margin-bottom: 50px;
+  }
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-set__item {
+  @include column-width(1, 0);
+
+  @media screen and (min-width: $content-width-tab) {
+    @include column-width(2, 30px);
+  }
+
+  @media screen and (min-width: $content-width-desk) {
+    @include column-width(3, 30px);
+  }
+}
+
+.card-set__image {
+  width: 100%;
+}
+
+.card-set__description {
+  margin-block: 0;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: $color-white;
+}
+
+.card-set__border {
+  padding: 20px 24px;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.card-set__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-set__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include fonts(18px, 36px, $font-weight-bold, 0.06em, $color-dark);
+}
+
+.card-set__text {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: $color-text;
+}
+
+.card-set__link {
+  display: block;
+  transition: box-shadow 250ms $timing-control;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 6%),
+      1px 4px 6px rgb(0 0 0 / 16%);
+  }
+
+  &:hover .card-set__overlay,
+  &:focus .card-set__overlay {
+    transform: translateY(-100%);
+  }
+}
+
+.card-set__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background-color: rgb(33 150 243 / 90%);
+  transition: transform 250ms;
+}

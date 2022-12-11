@@ -1,0 +1,34 @@
+.header {
+  border-bottom: 1px solid $color-header-border;
+
+  .logo__link {
+    display: block;
+    margin-block: 16px;
+
+    @media screen and (min-width: $content-width-tab) {
+      margin-block: 26px;
+    }
+
+    @media screen and (min-width: $content-width-desk) {
+      margin-block: 24px;
+    }
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  //tablet
+  @media screen and (min-width: $content-width-tab) {
+  }
+
+  //desktop
+  @media screen and (min-width: $content-width-desk) {
+    min-height: 80px;
+    margin-right: 91px;
+  }
+}

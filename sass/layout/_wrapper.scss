@@ -1,0 +1,23 @@
+.wrapper {
+  padding-inline: $content-padding;
+  margin-inline: auto;
+
+  //mobile
+  @media screen and (max-width: calc($content-width-tab - 1px)) {
+    max-width: $content-width-mob;
+  }
+
+  //tablet
+  @media screen and (min-width: $content-width-tab) {
+    max-width: $content-width-tab;
+  }
+
+  //desktop
+  @media screen and (min-width: $content-width-desk) {
+    max-width: $content-width-desk;
+  }
+}
+
+.wrapper_flex {
+  display: flex;
+}

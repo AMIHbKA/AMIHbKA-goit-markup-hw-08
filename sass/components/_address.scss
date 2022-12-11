@@ -1,0 +1,14 @@
+.address-block__item {
+  &:not(:first-child) {
+    margin-top: 8px;
+  }
+}
+
+.address-block__link {
+  font-style: normal;
+  @include fonts(14px, 24px, $font-weight-regular, 0.03em, $color-footer-text);
+}
+
+.address-block__link_colored {
+  color: $color-white;
+}

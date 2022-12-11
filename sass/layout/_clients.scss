@@ -1,0 +1,37 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients__item {
+  @include column-width(2, 30px);
+
+  //tablet
+  @media screen and (min-width: $content-width-tab) {
+    @include column-width(3, 30px);
+  }
+
+  //desktop
+  @media screen and (min-width: $content-width-desk) {
+    @include column-width(6, 30px);
+  }
+}
+
+.clients__link {
+  display: block;
+  padding-block: 16px;
+  border: 1px solid $social-icon-color;
+  border-radius: 4px;
+  fill: $social-icon-color;
+  transition: border-color 250ms $timing-control, fill 250ms $timing-control;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+    outline: none;
+    fill: $color-primary;
+  }
+}
