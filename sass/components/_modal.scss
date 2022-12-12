@@ -33,9 +33,9 @@
     width: 100%;
   }
 
-  @media screen and (max-width: $content-width-mob), (max-height: 609px) {
+  @media (orientation: landscape) and (max-width: calc($content-width-tab - 1px)) {
     top: 20px;
-    transform: translate(-50%);
+    transform: translateY(-50%);
   }
 
   @media screen and (min-width: $content-width-desk) {
