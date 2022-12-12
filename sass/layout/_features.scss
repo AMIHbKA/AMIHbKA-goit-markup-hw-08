@@ -38,6 +38,10 @@
 
   color: $color-dark;
   text-transform: uppercase;
+
+  @media screen and (max-width: calc($content-width-tab - 1px)) {
+    text-align: center;
+  }
 }
 
 .features__text {

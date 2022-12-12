@@ -993,6 +993,11 @@ img {
   color: #212121;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .features__caption {
+    text-align: center;
+  }
+}
 
 .features__text {
   margin-block: 0;
