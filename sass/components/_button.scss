@@ -82,3 +82,11 @@
 }
 
 //end buttons list
+
+//modificators
+
+.button-responsive {
+  @media screen and (max-width: 220px) {
+    width: 100%;
+  }
+}
