@@ -7,7 +7,7 @@
   background-color: rgb(0 0 0 / 20%);
   transition: opacity 500ms $timing-control, transform 500ms $timing-control;
   transform: scale(1);
-  overflowx: hidden;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
