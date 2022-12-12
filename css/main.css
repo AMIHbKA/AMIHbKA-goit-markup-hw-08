@@ -663,7 +663,7 @@ img {
 .menu-toggle:hover .mobile-menu__icon, .menu-toggle:focus .mobile-menu__icon {
   fill: #2196f3;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }

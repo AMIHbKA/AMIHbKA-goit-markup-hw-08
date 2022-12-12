@@ -9,7 +9,7 @@
     fill: $color-primary;
   }
 
-  @media screen and (min-width: calc($content-width-tab - 1px)) {
+  @media screen and (min-width: $content-width-tab) {
     display: none;
   }
 }
