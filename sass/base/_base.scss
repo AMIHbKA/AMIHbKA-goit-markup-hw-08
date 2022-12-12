@@ -48,3 +48,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+button {
+  @media screen and (max-width: $content-width-mob) {
+    max-width: 219px;
+  }
+}

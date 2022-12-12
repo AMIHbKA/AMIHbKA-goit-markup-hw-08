@@ -59,6 +59,12 @@ img {
   height: auto;
 }
 
+@media screen and (max-width: 480px) {
+  button {
+    max-width: 219px;
+  }
+}
+
 .address-block__item:not(:first-child) {
   margin-top: 8px;
 }
@@ -263,7 +269,7 @@ img {
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transform: scale(1);
           transform: scale(1);
-  overflowx: hidden;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -292,7 +298,7 @@ img {
     width: 100%;
   }
 }
-@media screen and (max-width: 480px), (max-height: 609px) {
+@media (orientation: landscape) and (max-width: 767px), (max-width: 310px), (max-height: 600px) {
   .modal {
     top: 20px;
     -webkit-transform: translate(-50%);
