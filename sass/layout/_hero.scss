@@ -9,101 +9,101 @@
   background-position: center;
   background-size: cover;
 
-  background-image: linear-gradient(
-      to right,
-      rgb(47 48 58 / 40%),
-      rgb(196 196 196 / 10%)
-    ),
-    url("../images/jpg/mobile/mob-bg-img@1x.jpg");
+  @include insert-hero-background("../images/jpg/mobile/mob-bg-img@1x.jpg");
+
+  $cur-img: "../images/webp/mobile/mob-bg-img@1x.webp";
+  @supports (background: url($cur-img)) {
+    @include insert-hero-background($cur-img);
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2ddpx) {
-    background-image: linear-gradient(
-        to right,
-        rgb(47 48 58 / 40%),
-        rgb(196 196 196 / 10%)
-      ),
-      url("../images/jpg/mobile/mob-bg-img@2x.jpg");
+    @include insert-hero-background("../images/jpg/mobile/mob-bg-img@2x.jpg");
+
+    $cur-img: "../images/webp/mobile/mob-bg-img@2x.webp";
+    @supports (background: url($cur-img)) {
+      @include insert-hero-background($cur-img);
+    }
   }
 
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 258dpi),
     (min-resolution: 2ddpx) {
-    background-image: linear-gradient(
-        to right,
-        rgb(47 48 58 / 40%),
-        rgb(196 196 196 / 10%)
-      ),
-      url("../images/jpg/mobile/mob-bg-img@3x.jpg");
+    @include insert-hero-background("../images/jpg/mobile/mob-bg-img@3x.jpg");
+
+    $cur-img: "../images/webp/mobile/mob-bg-img@3x.webp";
+    @supports (background: url($cur-img)) {
+      @include insert-hero-background($cur-img);
+    }
   }
 
   //tablet
   @media screen and (min-width: $content-width-tab) {
-    background-image: linear-gradient(
-        to right,
-        rgb(47 48 58 / 40%),
-        rgb(196 196 196 / 10%)
-      ),
-      url("../images/jpg/tablet/tab-bg-img@1x.jpg");
+    @include insert-hero-background("../images/jpg/tablet/tab-bg-img@1x.jpg");
+
+    $cur-img: "../images/webp/tablet/tab-bg-img@1x.webp";
+    @supports (background: url($cur-img)) {
+      @include insert-hero-background($cur-img);
+    }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2ddpx) {
-      background-image: linear-gradient(
-          to right,
-          rgb(47 48 58 / 40%),
-          rgb(196 196 196 / 10%)
-        ),
-        url("../images/jpg/tablet/tab-bg-img@2x.jpg");
+      @include insert-hero-background("../images/jpg/tablet/tab-bg-img@2x.jpg");
+
+      $cur-img: "../images/webp/tablet/tab-bg-img@2x.webp";
+      @supports (background: url($cur-img)) {
+        @include insert-hero-background($cur-img);
+      }
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 258dpi),
       (min-resolution: 2ddpx) {
-      background-image: linear-gradient(
-          to right,
-          rgb(47 48 58 / 40%),
-          rgb(196 196 196 / 10%)
-        ),
-        url("../images/jpg/tablet/tab-bg-img@3x.jpg");
+      @include insert-hero-background("../images/jpg/tablet/tab-bg-img@3x.jpg");
+
+      $cur-img: "../images/webp/tablet/tab-bg-img@3x.webp";
+      @supports (background: url($cur-img)) {
+        @include insert-hero-background($cur-img);
+      }
     }
   }
 
   //desktop
   @media screen and (min-width: $content-width-desk) {
     padding-block: 200px;
-    // background-image: image-set(
-    //   "../images/webp/desktop/desk-bg-img@1x.webp" type("image/webp"),
-    //   "../images/jpg/desktop/desk-bg-img@1x.jpg" type("image/jpeg")
-    // );
-    background-image: linear-gradient(
-        to right,
-        rgb(47 48 58 / 40%),
-        rgb(196 196 196 / 10%)
-      ),
-      url("../images/jpg/desktop/desk-bg-img@1x.jpg");
+    @include insert-hero-background("../images/jpg/desktop/desk-bg-img@1x.jpg");
+
+    $cur-img: "../images/webp/desktop/desk-bg-img@1x.webp";
+    @supports (background: url($cur-img)) {
+      @include insert-hero-background($cur-img);
+    }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2ddpx) {
-      background-image: linear-gradient(
-          to right,
-          rgb(47 48 58 / 40%),
-          rgb(196 196 196 / 10%)
-        ),
-        url("../images/jpg/desktop/desk-bg-img@2x.jpg");
+      @include insert-hero-background(
+        "../images/jpg/desktop/desk-bg-img@2x.jpg"
+      );
+
+      $cur-img: "../images/webp/desktop/desk-bg-img@2x.webp";
+      @supports (background: url($cur-img)) {
+        @include insert-hero-background($cur-img);
+      }
     }
 
     @media (min-device-pixel-ratio: 3),
       (min-resolution: 258dpi),
       (min-resolution: 2ddpx) {
-      background-image: linear-gradient(
-          to right,
-          rgb(47 48 58 / 40%),
-          rgb(196 196 196 / 10%)
-        ),
-        url("../images/jpg/desktop/desk-bg-img@3x.jpg");
+      @include insert-hero-background(
+        "../images/jpg/desktop/desk-bg-img@3x.jpg"
+      );
+
+      $cur-img: "../images/webp/desktop/desk-bg-img@3x.webp";
+      @supports (background: url($cur-img)) {
+        @include insert-hero-background($cur-img);
+      }
     }
   }
 }

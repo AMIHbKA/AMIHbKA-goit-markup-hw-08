@@ -32,3 +32,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@mixin insert-hero-background($img) {
+  background-image: linear-gradient(
+      to right,
+      rgb(47 48 58 / 40%),
+      rgb(196 196 196 / 10%)
+    ),
+    url($img);
+}
